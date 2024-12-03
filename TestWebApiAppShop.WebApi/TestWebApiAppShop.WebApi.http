@@ -1,0 +1,13 @@
+@TestWebApiAppShop.WebApi_HostAddress = http://localhost:5250
+
+GET {{TestWebApiAppShop.WebApi_HostAddress}}/api/client/birthdays?date=1990-12-03
+Accept: application/json
+
+###
+
+GET {{TestWebApiAppShop.WebApi_HostAddress}}/api/client/last-purchases?nDays=30
+Accept: application/json
+###
+
+GET {{TestWebApiAppShop.WebApi_HostAddress}}/api/purchase/requested-categories?clientId=1
+Accept: application/json
